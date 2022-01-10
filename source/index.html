@@ -5,24 +5,100 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header>
-      <section>
-        <div class="header-wrapper">
-          <a class="logo">
-            <!-- изображение логотипа -->
-          </a>
-          <a class="company-name">
-            Cat energy
-          </a>
-          <nav class="menu">
-
-          </nav>
-
-        </div>
+    <header class="header">
+      <section class="header__wrapper">
+        <a class="header__logo" href="blank.html">
+          <img class="header__logo-img" src="img/image-logo/logo-mobile.svg" alt="Логотип Кэт энерджи" width="33.32px" height="37.61px">
+        </a>
+        <a class="header__company-name" href="blank.html">
+           Cat energy
+        </a>
+        <nav class="main__nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__item main-nav__item--active" href="blank.html">Главная</a>
+            <a class="main-nav__catalog" href="blank.html">Каталог продукции</a>
+            <a class="main-nav__program" href="blank.html">Подбор программы</a>
+          </div>
+        </nav>
       </section>
     </header>
-
-
-
+    <main class="main__wrapper">
+      <section class="main-heading__wrapper">
+        <h1 class="main-heading__header">Функциональное питание для котов</h1>
+        <h2 class="main-heading__header-small">Занялся собой? Займись котом!</h2>
+        <img class="main-heading__img-cat" src="img/image-main/index-background-desktop 2.jpg" alt="Фон с котом" width="320px" height="302px">
+        <img class="main-heading__img-jar" src="img/image-main/index-can-mobile 1.png" alt="Логотип Кэт энерджи" width="280px" height="270px">
+        <a  class="button main-heading__button" href="catalog.html">Подобрать программу</a>
+      </section>
+      <section class="main-options" >
+        <h2 class="main-options__header">Похудение</h2>
+        <p class="main-options__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора на диету!
+          Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="main-options__text" href="blank.html">Каталог Slim</a>
+      </section>
+      <section>
+        <h2 class="main-options__header-mass">Набор массы</h2>
+        <p class="main-options__text-mass">Заработать авторитет среди дворовых котов и даже собак?
+          Серия Cat Energy Pro поможет вашему
+          коту нарастить необходимые мышцы!</p>
+        <a class="main-options__header-mass" href="blank.html">Каталог Pro</a>
+      </section>
+      <ul class="advantages">
+        <li class="advantages__title">
+          Как это работает
+          <ul>
+            <li class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <h2>Живой пример</h2>
+        <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок!
+        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <p>5 кг</p>
+        <p>снижение веса</p>
+        <p>60 дней</p>
+        <p>затрачено времени</p>
+        <p>Затраты на питание: 15 000 руб.</p>
+      </div>
+      <div class="slider">
+        <article class="slider_fat-cat">
+          <img src="img/image-slider/before-mobile 1.jpg" alt="Толстый кот" width="243px" height="232px">
+        </article>
+        <article class="slider_fat-cat">
+          <img src="img/image-slider/after-mobile 1.jpg" alt="Худой кот" width="243px" height="232px">
+        </article>
+      </div>
+      <!-- <div class="range-controls">
+        <div class="bar" style="width: 73%" ></div>
+        <div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
+        <div class="toggle toggle-max" tabindex="0" style="left: 73%"></div>
+      </div> -->
+      <h2>Приглашаем к сотрудничеству дилеров!</h2>
+      <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <a href="https://2gis.ru/spb">
+        <img class="img-map" src="img/map-image/map-image.png" alt="Изображение карты" width="320px" height="362px">
+      </a>
+    </main>
+    <footer>
+      <a class="company-name" href="blank.html">
+        Cat energy
+      </a>
+      <div class="socials">
+        <a class="socials-vk" href="#">Vk</a>
+        <a class="socials-fb" href="#">Fb</a>
+        <a class="socials-insta" href="#">Instagram</a>
+      </div>
+      <div>
+        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </div>
+    </footer>
   </body>
 </html>
