@@ -13,37 +13,38 @@
         <a class="header__company-name" href="blank.html">
            Cat energy
         </a>
-        <nav class="header__navigation">
-          <a class="header__navigation-main" href="blank.html">Главная</a>
-          <a class="header__navigation-catalog" href="blank.html">Каталог продукции</a>
-          <a class="header__navigation-program" href="blank.html">Подбор программы</a>
+        <nav class="main__nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__item main-nav__item--active" href="blank.html">Главная</a>
+            <a class="main-nav__catalog" href="blank.html">Каталог продукции</a>
+            <a class="main-nav__program" href="blank.html">Подбор программы</a>
+          </div>
         </nav>
       </section>
     </header>
     <main class="catalog-wrapper">
       <p>Страница находится в разработке</p>
-      <p>
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <p>
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
-      <a href="https://2gis.ru/spb">
+      <div class="address-bg__wrapper">
+        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <a class="map" href="https://2gis.ru/spb">
         <img class="img-map" src="img/map-image/map-image.png" alt="Изображение карты" width="320px" height="362px">
       </a>
     </main>
-    <footer>
-      <a class="company-name" href="blank.html">
+    <footer class="footer__wrapper">
+      <a class="footer__logo-text" class="company-name" href="blank.html">
         Cat energy
       </a>
-      <div class="socials">
-        <a class="socials-vk" href="#">Vk</a>
-        <a class="socials-fb" href="#">Fb</a>
-        <a class="socials-insta" href="#">Instagram</a>
+      <div class="socials__wrapper">
+        <a class="socials socials__vk" href="#">Vk</a>
+        <a class="socials socials__b" href="#">Fb</a>
+        <a class="socials socials__insta" href="#">Instagram</a>
       </div>
-      <div>
-        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      <div class="links__wrapper" >
+        <a class="links__ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a class="links__ref-logo" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
   </body>

@@ -13,103 +13,110 @@
         <a class="header__company-name" href="blank.html">
            Cat energy
         </a>
-        <nav class="header__navigation">
-          <a class="header__navigation-main" href="blank.html">Главная</a>
-          <a class="header__navigation-catalog" href="blank.html">Каталог продукции</a>
-          <a class="header__navigation-program" href="blank.html">Подбор программы</a>
+        <nav class="main__nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__item main-nav__item--active" href="blank.html">Главная</a>
+            <a class="main-nav__catalog" href="blank.html">Каталог продукции</a>
+            <a class="main-nav__program" href="blank.html">Подбор программы</a>
+          </div>
         </nav>
       </section>
     </header>
-    <main class="catalog-wrapper">
-      <h1>Подбор программы</h1>
-      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="form__for-sending" action="https://echo.htmlacademy.ru" method="post">
-        <p class="yourname">
-          <label class="title-name" for="appointment-name">ИМЯ:*</label>
-          <input class="fill-name" id="appointment-name" type="text" name="name" placeholder="Барсик">
-        </p>
-        <p>
-          <label class="title-weight" for="appointment-weight">Вес (кг):*</label>
-          <input class="fill-weight" id="appointment-weight" type="number" name="weight" placeholder="7">
-        </p>
-        <p>
-          <label class="title-age" for="appointment-age">Возраст (лет):</label>
-          <input class="fill-age" id="appointment-age" type="number" name="age" placeholder="7">
-        </p>
-        <ul class="filter-positions">
-          <li class="filter-option">
-            <input class="visually-hidden filter-input-radio" type="radio" name="slimming" id="radio-slimming" checked value="Похудение">
-            <label for="radio-slimming">Похудение</label>
+    <main class="form__wrapper">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="form__form-sending" action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <p class="form-sending">
+            <label class="form-sending__name" for="appointment-name">ИМЯ:*</label>
+            <input class="form-sending__fill-text"  id="appointment-name" type="text" name="name" placeholder="Барсик">
+          </p>
+          <p class="form-sending">
+            <label class="form-sending__name" for="appointment-weight">Вес (кг):*</label>
+            <input class="form-sending__fill-text" id="appointment-weight" type="number" name="weight" placeholder="7">
+          </p>
+          <p class="form-sending">
+            <label class="form-sending__name" for="appointment-age">Возраст (лет):</label>
+            <input class="form-sending__fill-text" id="appointment-age" type="number" name="age" placeholder="7">
+          </p>
+        </div>
+        <ul class="form__filter-positions">
+          <li class="filter-positions__option">
+            <input class="visually-hidden filter-positions__radio-active" type="radio" name="slimming" id="radio-slimming" checked value="Похудение">
+            <label class="filter-positions__radio-title" for="radio-slimming">Похудение</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input-radio" type="radio" name="weight-gain" id="radio-weight-gain" value="Набор массы">
-            <label for="radio-weight-gain">Набор массы</label>
+          <li class="filter-positions__option">
+            <input class="visually-hidden filter-positions__radio" type="radio" name="weight-gain" id="radio-weight-gain" value="Набор массы">
+            <label class="filter-positions__radio-title" for="radio-weight-gain">Набор массы</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input-radio" type="radio" name="i-dont-know" id="radio-i-dont-know" value="Не знаю (Нужен ваш совет)">
-            <label for="radio-i-dont-know">Не знаю (Нужен ваш совет)</label>
+          <li class="filter-positions__option">
+            <input class="visually-hidden filter-positions__radio" type="radio" name="i-dont-know" id="radio-i-dont-know" value="Не знаю (Нужен ваш совет)">
+            <label class="filter-positions__radio-title" for="radio-i-dont-know">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
-        <h2>Контактные данные (владельца кота)</h2>
-        <p>
-          <label class="title-email" for="appointment-email">E-mail:*:</label>
-          <input class="fill-email" id="appointment-email" type="text" name="email" placeholder="kuklachev@gmail.com">
-        </p>
-        <p>
-          <label class="title-phone" for="appointment-phone">Телефон:*</label>
-          <input class="fill-phone" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
-        </p>
-        <h2>Комментарий</h2>
-        <p>
-          <label class="title-name" for="appointment-text"></label>
-          <textarea class="fill-text" name="comment" id="appointment-text" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </p>
-        <fieldset class="additions">
-          <legend class="legend-price">Дополнительно</legend>
-          <ul class="filter-positions">
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked="" value="Сахарозаменитель">
-              <label class="filter-items" for="sweetener">Сахарозаменитель</label>
+        <div class="form__contacts">
+          <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+          <p class="form-sending">
+            <label class="form-sending__name"> for="appointment-email">E-mail:*:</label>
+            <input class="form-sending__fill-text" id="appointment-email" type="text" name="email" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="form-sending">
+            <label lass="form-sending__name" for="appointment-phone">Телефон:*</label>
+            <input class="form-sending__fill-text" id="appointment-phone" type="number" name="phone" placeholder="8 (960) 900-60-90">
+          </p>
+        </div>
+        <div class="form__comment">
+          <h2 class="form__comment-title">Комментарий</h2>
+          <p class="form-sending">
+            <label lass="form-sending__name" for="appointment-text"></label>
+            <textarea class="form-sending__fill-text" name="comment" id="appointment-text" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </div>
+        <fieldset class="form__additions">
+          <legend class="form__additions-title">Дополнительно</legend>
+          <ul class="filter-positions__list">
+            <li class="filter-positions__item">
+              <input class="visually-hidden filter-positions__item-checkbox-active" type="checkbox" name="sweetener" id="sweetener" checked="" value="Сахарозаменитель">
+              <label class="filter-positions__items" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="filter-positions__item">
+              <input class="visually-hidden filter-positions__item-checkbox" type="checkbox" name="water" id="water" value="вода">
+              <label class="filter-positions__items" for="water">Питьевая вода</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="water" id="water" value="вода">
-              <label class="filter-items" for="water">Питьевая вода</label>
+              <input class="visually-hidden filter-positions__item-checkbox" type="checkbox" name="milk" id="milk" value="Молоко">
+              <label class="filter-positions__items" for="milk">Молоко</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="milk" id="milk" value="Молоко">
-              <label class="filter-items" for="milk">Молоко</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="vitamins" id="vitamins" value="Витамины">
-              <label class="filter-items" for="vitamins">Витамины</label>
+              <input class="visually-hidden filter-positions__item-checkbox" type="checkbox" name="vitamins" id="vitamins" value="Витамины">
+              <label class="filter-positions__items" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
-        <a class="catalog-button" href="blank.html">Отправить заявку</a>
+        <a class="catalog-button button" href="blank.html">Отправить заявку</a>
         <p>* — Обязательные поля</p>
       </form>
-      <p>
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <p>
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
-      <a href="https://2gis.ru/spb">
+      <div class="address-bg__wrapper">
+        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <a class="map" href="https://2gis.ru/spb">
         <img class="img-map" src="img/map-image/map-image.png" alt="Изображение карты" width="320px" height="362px">
       </a>
     </main>
-    <footer>
-      <a class="company-name" href="blank.html">
+    <footer class="footer__wrapper">
+      <a class="footer__logo-text" class="company-name" href="blank.html">
         Cat energy
       </a>
-      <div class="socials">
-        <a class="socials-vk" href="#">Vk</a>
-        <a class="socials-fb" href="#">Fb</a>
-        <a class="socials-insta" href="#">Instagram</a>
+      <div class="socials__wrapper">
+        <a class="socials socials__vk" href="#">Vk</a>
+        <a class="socials socials__b" href="#">Fb</a>
+        <a class="socials socials__insta" href="#">Instagram</a>
       </div>
-      <div>
-        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        <a class="ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      <div class="links__wrapper" >
+        <a class="links__ref" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a class="links__ref-logo" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
   </body>
