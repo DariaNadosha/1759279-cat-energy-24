@@ -1,16 +1,20 @@
-body {
+.page {
+  max-width: 320px;
   margin: 10;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: @color-black;
 }
 
 .button {
-  padding: 10px 40px 10px;
+  padding: 7px 70px;
   text-align: center;
   display: inline-block;
   vertical-align: baseline;
   background-color: @color-green;
   text-decoration: none;
   text-transform: uppercase;
-  color: @color-main;
+  color: @color-white;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -18,4 +22,16 @@ body {
   &:hover {
     background-color: @color-greener;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @color-black;
 }
