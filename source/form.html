@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <section class="header__wrapper">
         <a class="logo" href="index.html">Логотип Cat Energy
@@ -16,20 +16,20 @@
         </a>
         <a class="logo-text" href="index.html"> Логотип Cat Energy - текст
         </a>
-        <nav class="main__nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <a class="main-nav__item main-nav__item--active" href="index.html">Главная</a>
-            <a class="main-nav__catalog" href="catalog.html">Каталог продукции</a>
-            <a class="main-nav__program" href="blank.html">Подбор программы</a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="nav__wrapper">
+            <a class="nav__item main-nav__item--active" href="index.html">Главная</a>
+            <a class="nav__catalog" href="catalog.html">Каталог продукции</a>
+            <a class="nav__program" href="blank.html">Подбор программы</a>
           </div>
         </nav>
       </section>
     </header>
-    <main class="form__wrapper">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="form__form-sending" action="https://echo.htmlacademy.ru" method="post">
+    <main class="main">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="form-title">Подбор программы</h1>
+        <p class="form-subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div>
           <p class="form-sending">
             <label class="form-sending__name" for="appointment-name">ИМЯ:*</label>
@@ -100,12 +100,14 @@
         <a class="catalog-button button" href="blank.html">Отправить заявку</a>
         <p>* — Обязательные поля</p>
       </form>
-      <div class="address-bg__wrapper">
-        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="address__text"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="address">
+        <div class="address__wrapper--form">
+        <h2 class="address__title--form">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__text--form"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <a class="map" href="https://2gis.ru/spb">
-        <img class="img-map" src="img/map-image/map-image.png" alt="Изображение карты" width="320px" height="362px">
+        <img class="img-map" src="img/map/map-image.png" alt="Изображение карты" width="320px" height="362px">
       </a>
     </main>
     <footer class="footer">

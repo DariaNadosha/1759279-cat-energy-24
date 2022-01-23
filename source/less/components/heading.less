@@ -1,18 +1,21 @@
 .heading {
-  background: url("../img/main/cat-with-tongue.jpg") no-repeat;
-  background-size: 100%;
-  display: block;
-  text-align: center;
   margin: 0;
   height: 100%;
   margin-top: -25px;
 }
 
+.heading__image {
+  background: url("../img/main/cat-with-tongue.jpg") no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+}
+
 .heading__overlay {
   background-color: rgba(104, 183, 56, 0.85);
-  // // background-size: cover;
-  // margin: 0;
-  // height: 100%;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .heading__header {
@@ -21,6 +24,7 @@
   font-weight: 400;
   color: @color-white;
   padding: 27px 35px 0 36px;
+  text-align: center;
 }
 
 .heading__header--small {
@@ -29,13 +33,74 @@
   font-weight: 400;
   color: @color-white;
   padding: 0 62px 153px 60px;
+  text-align: center;
 }
 
 .heading__img--jar {
-  margin-top: -150px;
+  margin-bottom: auto;
 }
 
 .heading__button {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    margin-top: -25px;
+  }
+
+  .heading__image {
+    margin-right: auto;
+    margin-left: auto;
+    background: none;
+  } //не исчезает рисунок
+
+  .heading__overlay {
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-color: transparent;
+  } //не исчезает цвет фона
+
+  .heading__header {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: @color-black;
+    text-align: left;
+    width: 414px;
+    margin-left: 117px;
+    margin-right: 237px;
+  }
+
+  .heading__header--small {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: @color-black;
+    padding: 0 0 25px 33px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 123px;
+    margin-right: 330px;
+  }
+
+  .heading__img--jar {
+    margin-bottom: auto;
+    width: 709px;
+    height: 609px;
+  }
+
+  .heading__button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    font-weight: 400;
+  } //как поменять кнопку и изображение местами
 }

@@ -1,13 +1,7 @@
 .logo {
   background: url("../img/logo/logo-mobile.svg") no-repeat;
-  width: 33.32px;
-  height: 37.61px;
-  position: relative;
-  // top: 5px;
-  // right: 15px;
-  margin-top: 0;
-  border: none;
-  background-color: transparent;
+  width: 34px;
+  height: 38px;
   cursor: pointer;
   font-size: 0;
 
@@ -23,13 +17,6 @@
 .logo-text {
   background: url("../img/logo/logo-text.svg") no-repeat;
   width: 101px;
-  height: 18px;
-  position: relative;
-  // top: 5px;
-  // right: 15px;
-  margin-top: 0;
-  border: none;
-  background-color: transparent;
   cursor: pointer;
   font-size: 0;
 
@@ -42,4 +29,36 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .logo {
+    background: url("../img/logo/logo-tablet.svg") no-repeat;
+    width: 174px;
+    height: 52px;
+    cursor: pointer;
+    font-size: 0;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .logo-text {
+    display: none;
+    background: url("../img/logo/logo-text.svg") no-repeat;
+    width: 101px;
+    cursor: pointer;
+    font-size: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

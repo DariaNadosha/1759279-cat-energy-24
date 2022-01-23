@@ -1,0 +1,51 @@
+.address__wrapper--main {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  color: @color-extra-grey;
+  width: 139px;
+}
+
+.address__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: @color-dark-grey;
+  width: 139px;
+}
+
+@media (min-width: @tablet-width) {
+  .address__wrapper--main {
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: left;
+    color: @color-extra-grey;
+    width: 172px;
+  }
+
+  .address__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: @color-dark-grey;
+    width: 160px;
+  }
+} //опустить город пониже
