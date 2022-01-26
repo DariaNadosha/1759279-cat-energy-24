@@ -59,3 +59,46 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .nav a {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: 400;
+    color: @color-white;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 1;
+      border: none;
+      border-bottom: 2px solid @color-white;
+    }
+  }
+
+  .nav a:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .main-nav__item--active {
+    border: none;
+    border-bottom: 2px solid @color-white;
+  }
+
+  .nav__toggle {
+    // background: url("../img/logo/menu-toggle.svg") no-repeat;
+    width: 24px;
+    height: 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    display: none;
+  }
+}
