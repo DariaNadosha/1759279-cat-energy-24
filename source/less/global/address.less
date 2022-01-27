@@ -28,9 +28,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .address {
+    max-width: 768px;
+  }
+
   .address__wrapper--main {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 56px 70px 56px 70px;
     display: flex;
     justify-content: space-between;
   }
@@ -42,6 +45,7 @@
     text-align: left;
     color: @color-extra-grey;
     width: 172px;
+    margin: 0;
   }
 
   .address__text {
@@ -51,5 +55,43 @@
     text-align: right;
     color: @color-dark-grey;
     width: 160px;
+    margin: 0;
   }
 } //опустить город пониже
+
+@media (min-width: @desktop-width) {
+  .address {
+    max-width: 565px;
+  }
+
+  .address__wrapper--main {
+    margin-top: 80px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background: @color-white;
+  }
+
+  .address__title {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: left;
+    color: @color-extra-grey;
+    width: 172px;
+    margin: 0;
+    padding: 56px 43px 56px 80px;
+  }
+
+  .address__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: @color-dark-grey;
+    width: 160px;
+    margin: 0;
+    padding: 56px 80px 56px 43px;
+  }
+}

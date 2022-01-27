@@ -35,18 +35,26 @@
   color: @color-black;
 }
 
-@media (min-width: @desktop-width) {
-  .page {
-    margin: 0;
-    font-weight: 400;
+* {
+  outline: solid 2px @color-outline;
+}
+
+@media (min-width: @tablet-width) {
+  .title {
     font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
     color: @color-black;
-    background: url("../img/main/desktop-cat-with-tongue.png") no-repeat;
-    margin-right: 0;
-    background-position: top right;
   }
 }
 
-* {
-  outline: solid 2px red;
+@media (min-width: @desktop-width) {
+  .title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @color-black;
+  }
 }
