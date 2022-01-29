@@ -27,16 +27,24 @@
   width: 139px;
 }
 
-.address__wrapper--catalog {
+.address--catalog,
+.address--form {
+  background: @color-light-grey;
+}
+
+.address__wrapper--catalog,
+.address__wrapper--form {
   display: flex;
   background: @color-light-grey;
 }
 
-.address__title--catalog {
+.address__title--catalog,
+.address__wrapper--form {
   margin-left: 20px;
 }
 
-.address__text--catalog {
+.address__text--catalog,
+.address__wrapper--form {
   margin-right: 20px;
 }
 
@@ -71,11 +79,13 @@
     margin: 0;
   } //опустить город пониже
 
-  .address--catalog {
+  .address--catalog,
+  .address--form {
     background: @color-light-grey;
   }
 
-  .address__wrapper--catalog {
+  .address__wrapper--catalog,
+  .address__wrapper--form {
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
@@ -84,11 +94,13 @@
     justify-content: space-between;
   }
 
-  .address__title--catalog {
+  .address__title--catalog,
+  .address__title--form {
     margin-left: 20px;
   }
 
-  .address__text--catalog {
+  .address__text--catalog,
+  .address__text--form {
     margin-right: 30px;
   }
 }
@@ -130,20 +142,24 @@
     padding: 56px 80px 56px 43px;
   }
 
-  .address--catalog {
+  .address--catalog,
+  .address--form {
     background: @color-white;
   }
 
-  .address__wrapper--catalog {
+  .address__wrapper--catalog,
+  .address__wrapper--form {
     display: flex;
     background: @color-white;
   }
 
-  .address__title--catalog {
+  .address__title--catalog,
+  .address__title--form {
     margin-left: 20px;
   }
 
-  .address__text--catalog {
+  .address__text--catalog,
+  .address__text--form {
     margin-right: 20px;
   }
 }

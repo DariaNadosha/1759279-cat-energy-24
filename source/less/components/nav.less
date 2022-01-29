@@ -46,10 +46,15 @@
 
   .nav__item--active {
     border: none;
-    border-bottom: 2px solid @color-white;
+    border-bottom: 2px solid @color-green;
   }
 
   .nav__catalog--active {
+    border: none;
+    border-bottom: 2px solid @color-green;
+  }
+
+  .nav__program--active {
     border: none;
     border-bottom: 2px solid @color-green;
   }
@@ -103,6 +108,11 @@
     border-bottom: 2px solid @color-green;
   }
 
+  .nav__program--active {
+    border: none;
+    border-bottom: 2px solid @color-green;
+  }
+
   .nav__toggle {
     // background: url("../img/logo/menu-toggle.svg") no-repeat;
     width: 24px;
@@ -114,6 +124,10 @@
   }
 
   .nav--catalog a {
+    color: @color-black;
+  }
+
+  .nav--program a {
     color: @color-black;
   }
 }

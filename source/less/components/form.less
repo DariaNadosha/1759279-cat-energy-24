@@ -1,0 +1,18 @@
+.form {
+  max-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 69px;
+  }
+}
