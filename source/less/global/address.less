@@ -27,6 +27,19 @@
   width: 139px;
 }
 
+.address__wrapper--catalog {
+  display: flex;
+  background: @color-light-grey;
+}
+
+.address__title--catalog {
+  margin-left: 20px;
+}
+
+.address__text--catalog {
+  margin-right: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .address {
     max-width: 768px;
@@ -56,8 +69,30 @@
     color: @color-dark-grey;
     width: 160px;
     margin: 0;
+  } //опустить город пониже
+
+  .address--catalog {
+    background: @color-light-grey;
   }
-} //опустить город пониже
+
+  .address__wrapper--catalog {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  .address__title--catalog {
+    margin-left: 20px;
+  }
+
+  .address__text--catalog {
+    margin-right: 30px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .address {
@@ -93,5 +128,22 @@
     width: 160px;
     margin: 0;
     padding: 56px 80px 56px 43px;
+  }
+
+  .address--catalog {
+    background: @color-white;
+  }
+
+  .address__wrapper--catalog {
+    display: flex;
+    background: @color-white;
+  }
+
+  .address__title--catalog {
+    margin-left: 20px;
+  }
+
+  .address__text--catalog {
+    margin-right: 20px;
   }
 }

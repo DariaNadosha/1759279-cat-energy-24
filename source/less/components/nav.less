@@ -44,7 +44,12 @@
     margin-right: 35px;
   }
 
-  .main-nav__item--active {
+  .nav__item--active {
+    border: none;
+    border-bottom: 2px solid @color-white;
+  }
+
+  .nav__catalog--active {
     border: none;
     border-bottom: 2px solid @color-green;
   }
@@ -88,9 +93,14 @@
     margin-right: 35px;
   }
 
-  .main-nav__item--active {
+  .nav__item--active {
     border: none;
     border-bottom: 2px solid @color-white;
+  }
+
+  .nav__catalog--active {
+    border: none;
+    border-bottom: 2px solid @color-green;
   }
 
   .nav__toggle {
@@ -101,5 +111,9 @@
     cursor: pointer;
     font-size: 0;
     display: none;
+  }
+
+  .nav--catalog a {
+    color: @color-black;
   }
 }
