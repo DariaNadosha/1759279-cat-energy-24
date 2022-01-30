@@ -1,4 +1,62 @@
-@main-heading__header: {
-  text-transform: uppercase;
-  font-family: "Oswald", "Arial", sans-serif;
+.header {
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    margin-top: 24px;
+  }
 }
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 53px;
+  }
+}
+
+.header__wrapper--main {
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      margin: 0;
+      font-weight: 400;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @color-black;
+      background: url("../img/main/desktop-cat-with-tongue.png") no-repeat;
+      margin-right: 0;
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+

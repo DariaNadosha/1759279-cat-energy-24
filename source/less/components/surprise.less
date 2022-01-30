@@ -1,0 +1,101 @@
+.surprise {
+  max-width: 320px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 320px;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -320px;
+    right: 110px;
+  }
+}
+
+.surprise__image {
+  background: url("../img/surprise/surprise.jpg") no-repeat;
+  width: 280px;
+  height: 290px;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/surprise/surprise-tablet.png") no-repeat;
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/surprise/surprise.jpg") no-repeat;
+    width: 280px;
+    height: 290px;
+    background-size: cover;
+  }
+}
+
+.surprise__overlay {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(104, 183, 56, 0.85);
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(104, 183, 56, 0.85);
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.surprise__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-white;
+  text-align: center;
+  position: relative;
+  width: 161px;
+  padding: 180px 30px 50px 60px;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: @color-white;
+    text-align: center;
+    position: relative;
+    width: 161px;
+    padding: 80px 8px 60px 400px;
+
+    &::before {
+      content: "";
+      background: url("../img/surprise/surprise-gift-tablet.svg") no-repeat;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 70px;
+      top: 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: @color-white;
+    text-align: center;
+    position: relative;
+    width: 161px;
+    padding: 180px 30px 50px 60px;
+  }
+}

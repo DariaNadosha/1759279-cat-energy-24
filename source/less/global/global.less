@@ -1,9 +1,9 @@
 .page {
-  max-width: 320px;
-  margin: 10;
-  font-weight: 400;
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   color: @color-black;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .button {
@@ -34,4 +34,24 @@
   font-size: 36px;
   line-height: 40px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @color-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @color-black;
+  }
 }
+
+// * {
+//   outline: solid 2px @color-outline;
+// }
