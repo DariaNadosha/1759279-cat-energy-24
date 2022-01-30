@@ -12,6 +12,22 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/logo/logo-tablet.svg") no-repeat;
+    width: 174px;
+    height: 52px;
+    cursor: pointer;
+    font-size: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .logo-text {
@@ -28,26 +44,8 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .logo {
-    background: url("../img/logo/logo-tablet.svg") no-repeat;
-    width: 174px;
-    height: 52px;
-    cursor: pointer;
-    font-size: 0;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
-  }
-
-  .logo-text {
+  @media (min-width: @tablet-width) {
     display: none;
     background: url("../img/logo/logo-text.svg") no-repeat;
     width: 101px;

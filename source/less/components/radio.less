@@ -1,5 +1,10 @@
 .radio {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin-top: 25px;
+  }
 }
 
 .radio__list {
@@ -8,6 +13,14 @@
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 1px solid @color-grey;
+
+  @media (min-width: @tablet-width) {
+    list-style: none;
+    position: relative;
+    margin-left: 70px;
+    border: 1px solid @color-grey;
+    padding: 25px 250px 25px 60px;
+  }
 }
 
 .radio__item label {
@@ -17,10 +30,21 @@
   color: @color-almost-black;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: @color-almost-black;
+  }
 }
 
 .radio__item li {
   padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+  }
 }
 
 .visually-hidden {
@@ -34,6 +58,19 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .radio__item--input:not(:checked) + label {
@@ -47,6 +84,20 @@
     position: absolute;
     left: -30px;
     top: 7px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../img/radio/radio.svg") no-repeat;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: -30px;
+      top: 7px;
+    }
   }
 }
 
@@ -62,61 +113,8 @@
     left: -30px;
     top: 7px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .radio {
-    border: none;
-    margin-top: 25px;
-  }
-
-  .radio__list {
-    list-style: none;
-    position: relative;
-    margin-left: 70px;
-    border: 1px solid @color-grey;
-    padding: 25px 250px 25px 60px;
-  }
-
-  .radio__item label {
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-top: 10px;
-    color: @color-almost-black;
-  }
-
-  .radio__item li {
-    padding-top: 10px;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  .radio__item--input:not(:checked) + label {
-    position: relative;
-
-    &::before {
-      content: "";
-      background: url("../img/radio/radio.svg") no-repeat;
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      left: -30px;
-      top: 7px;
-    }
-  }
-
-  .radio__item--input:checked + label {
+  @media (min-width: @tablet-width) {
     position: relative;
 
     &::after {
