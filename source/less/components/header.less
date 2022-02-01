@@ -1,5 +1,7 @@
 .header {
   max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
@@ -48,10 +50,11 @@
       font-weight: 400;
       font-family: "Oswald", "Arial", sans-serif;
       color: @color-black;
-      background: url("../img/main/desktop-cat-with-tongue.png") no-repeat;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/desktop-cat-with-tongue.png") no-repeat;
+      background-color: @color-green;
       margin-right: 0;
       position: absolute;
-      width: 720px;
+      width: 50%;
       height: 694px;
       top: 0;
       right: 0;

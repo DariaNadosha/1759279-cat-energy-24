@@ -1,14 +1,7 @@
 .footer {
   background-color: @color-light-grey;
-  max-width: 320px;
-
-  @media (min-width: @tablet-width) {
-    max-width: 768px;
-    background-color: @color-light-grey;
-  }
 
   @media (min-width: @desktop-width) {
-    max-width: 1440px;
     background-color: @color-light-grey;
   }
 }
@@ -17,21 +10,22 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin-left: 20px;
-  margin-right: 20px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
+    max-width: 768px;
     text-align: center;
     padding: 56px 30px 56px 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 120px;
-    margin-right: 0;
-    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1440px;
     text-align: center;
     padding: 57px 110px 57px 110px;
     display: grid;
@@ -63,6 +57,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,7 +99,6 @@
 
 .socials__wrapper {
   margin-top: 20px;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -122,7 +116,7 @@
 }
 
 .socials--vk {
-  background: url("../img/footer/footer-icon-vkontakte.svg") no-repeat;
+  background: url("../img/footer/footer-icon-vkontakte.svg") no-repeat 50% 50%;
   width: 23px;
   height: 16px;
   cursor: pointer;
@@ -130,7 +124,7 @@
   font-size: 0;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/footer/footer-icon-vkontakte-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-vkontakte-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;
@@ -138,7 +132,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/footer/footer-icon-vkontakte-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-vkontakte-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;
@@ -147,7 +141,7 @@
 }
 
 .socials--fb {
-  background: url("../img/footer/footer-icon-fb.svg") no-repeat;
+  background: url("../img/footer/footer-icon-fb.svg") no-repeat 50% 50%;
   width: 23px;
   height: 16px;
   cursor: pointer;
@@ -155,7 +149,7 @@
   font-size: 0;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/footer/footer-icon-fb-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-fb-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;
@@ -163,7 +157,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/footer/footer-icon-fb-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-fb-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;
@@ -172,7 +166,7 @@
 }
 
 .socials--insta {
-  background: url("../img/footer/footer-icon-instagram.svg") no-repeat;
+  background: url("../img/footer/footer-icon-instagram.svg") no-repeat 50% 50%;
   width: 23px;
   height: 16px;
   cursor: pointer;
@@ -180,7 +174,7 @@
   font-size: 0;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/footer/footer-icon-instagram-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-instagram-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;
@@ -188,7 +182,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/footer/footer-icon-instagram-tab&desk.svg") no-repeat;
+    background: url("../img/footer/footer-icon-instagram-tab&desk.svg") no-repeat 50% 50%;
     width: 30px;
     height: 23px;
     cursor: pointer;

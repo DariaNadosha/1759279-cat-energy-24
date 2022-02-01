@@ -1,62 +1,74 @@
 .heading {
-  margin: 0;
-  height: 100%;
+  height: 302px;
   margin-top: -25px;
   font-family: "Oswald", "Arial", sans-serif;
-  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/cat-with-tongue.jpg") no-repeat;
+  background-position: center;
+  top: 0;
+  margin-bottom: 190px;
 
   @media (min-width: @tablet-width) {
-    text-align: center;
-    height: 100%;
+    text-align: left;
+    background: none;
+    margin-top: 62px;
+    margin-bottom: 590px;
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
-    margin: 0;
-    height: 100%;
     margin-top: 111px;
+    background: none;
+    margin-bottom: 260px;
+  }
+}
+
+.heading__wrapper {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: "";
+    background: url("../img/main/can.png") no-repeat;
+    width: 280px;
+    height: 270px;
+    position: absolute;
+    top: 56%;
+    right: 31%;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url("../img/main/can-tablet.png") no-repeat;
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      top: 74%;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     max-width: 1440px;
-  }
-}
+    margin-left: 190px;
 
-.heading__image {
-  background: url("../img/main/cat-with-tongue.jpg") no-repeat;
-  margin-right: auto;
-  margin-left: auto;
-  background-size: cover;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 0;
-    margin-left: 97px;
-    background: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: auto;
-    margin-left: auto;
-    background: none;
-  }
-}
-
-.heading__overlay {
-  background-color: rgba(104, 183, 56, 0.85);
-  background-size: cover;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 0;
-    margin-left: 0;
-    background-size: cover;
-    background-color: transparent;
-    padding-left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: auto;
-    margin-left: auto;
-    background-size: cover;
-    background-color: transparent;
+    &::after {
+      content: "";
+      background: url("../img/main/can-desktop.png") no-repeat;
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      top: 0;
+      right: 14%;
+      z-index: -1;
+    }
   }
 }
 
@@ -71,12 +83,10 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    font-weight: 400;
     color: @color-black;
     text-align: left;
     width: 414px;
-    margin-left: 0;
-    padding: 0 0 0 0;
+    padding: 27px 0 0 87px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,7 +94,8 @@
     line-height: 60px;
     font-weight: 400;
     color: @color-black;
-    margin-left: 190px;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -101,7 +112,7 @@
     line-height: 20px;
     font-weight: 400;
     color: @color-black;
-    padding: 0 0 0 0;
+    padding: 0 0 0 87px;
     text-align: left;
     text-transform: uppercase;
     margin-left: 0;
@@ -115,39 +126,18 @@
     color: @color-black;
     padding: 0 0 0 0;
     text-transform: uppercase;
-    margin-left: 190px;
+    margin-left: 0;
     margin-right: 0;
-  }
-}
-
-.heading__img--jar {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: -140px;
-
-  @media (min-width: @tablet-width) {
-    width: 709px;
-    height: 609px;
-    margin: 0 30px 0 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
-    width: 552px;
-    height: 499px;
-    margin-top: -300px;
-    margin-left: 305px;
   }
 }
 
 .heading__button {
   margin-left: 20px;
   margin-right: 20px;
-  position: absolute;
-  margin-top: 100px;
+  margin-top: 125px;
 
   @media (min-width: @tablet-width) {
-    margin-left: -60px;
+    margin-left: 87px;
     margin-right: auto;
     font-size: 20px;
     line-height: 20px;
@@ -157,7 +147,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 190px;
+    margin-left: 0;
     margin-right: 0;
     font-size: 20px;
     line-height: 20px;

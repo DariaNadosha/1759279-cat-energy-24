@@ -27,9 +27,9 @@
       </section>
     </header>
     <main class="main">
-        <h1 class="form-header title">Подбор программы</h1>
-        <p class="form-subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="form__header title">Подбор программы</h1>
+        <p class="form__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="cat-data">
           <div class="cat-data__wrapper">
             <p class="cat-data__fields">
@@ -49,15 +49,15 @@
         <fieldset class="radio">
           <ul class="radio__list">
             <li class="radio__item">
-              <input class="visually-hidden radio__item--input" type="radio" name="slimming" id="radio-slimming" checked value="Похудение">
+              <input class="visually-hidden radio__item--input" type="radio" name="radio" id="radio-slimming" checked value="Похудение">
               <label class="radio__item--label" for="radio-slimming">Похудение</label>
             </li>
             <li class="radio__item">
-              <input class="visually-hidden radio__item--input" type="radio" name="weight-gain" id="radio-weight-gain" value="Набор массы">
+              <input class="visually-hidden radio__item--input" type="radio" name="radio" id="radio-weight-gain" value="Набор массы">
               <label class="radio__item--label" for="radio-weight-gain">Набор массы</label>
             </li>
             <li class="radio__item">
-              <input class="visually-hidden radio__item--input" type="radio" name="i-dont-know" id="radio-i-dont-know" value="Не знаю (Нужен ваш совет)">
+              <input class="visually-hidden radio__item--input" type="radio" name="radio" id="radio-i-dont-know" value="Не знаю (Нужен ваш совет)">
               <label class="radio__item--label" for="radio-i-dont-know">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -116,9 +116,9 @@
         <p class="address__text address__text--form"> ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <a class="map" href="https://2gis.ru/spb">
-        <img class="img-map" src="img/map/map-image.png" alt="Изображение карты" width="320px" height="362px">
-      </a>
+      <section class="map">
+        <iframe width="320" height="362" style="border: 0;" loading="lazy" allowfullscreen title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"></iframe>
+      </section>
     </main>
     <footer class="footer">
       <section class="footer__wrapper">

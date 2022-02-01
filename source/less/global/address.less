@@ -1,5 +1,8 @@
 .address {
   max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background: @color-grey;
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
@@ -17,7 +20,7 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    margin: 56px 70px 56px 70px;
+    margin: 56px 40px 56px 40px;
     display: flex;
     justify-content: space-between;
   }
@@ -29,6 +32,7 @@
     justify-content: space-between;
     position: absolute;
     background: @color-white;
+    left: 0;
   }
 }
 
@@ -108,7 +112,12 @@
 .address__wrapper--catalog,
 .address__wrapper--form {
   display: flex;
-  background: @color-light-grey;
+  margin-top: 80px;
+  margin-left: 110px;
+  justify-content: space-between;
+  // position: absolute;
+  // background: #ffffff;
+  left: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -126,7 +135,7 @@
 }
 
 .address__title--catalog,
-.address__wrapper--form {
+.address__title--form {
   margin-left: 20px;
 
   @media (min-width: @tablet-width) {
@@ -139,7 +148,7 @@
 }
 
 .address__text--catalog,
-.address__wrapper--form {
+.address__text--form {
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {

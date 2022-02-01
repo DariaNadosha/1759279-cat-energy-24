@@ -1,23 +1,83 @@
 .additional {
   max-width: 320px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
     display: block;
-    margin-left: 30px;
-    margin-right: 30px;
     border: 1px solid @color-grey;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     display: block;
-    margin-left: 110px;
-    margin-right: 434px;
     border: 0 solid @color-grey;
     margin-top: 80px;
     border-top: 1px solid @color-grey;
+    padding-left: 110px;
+    padding-right: 434px;
+    margin-bottom: 100px;
+  }
+}
+
+.additional__title {
+  max-width: 320px;
+  margin-right: 53px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  background-color: @color-white;
+  margin-left: 20px;
+
+  &::before {
+    content: "";
+    border: 2px solid @color-green;
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    /* left: calc((280px - 100vw) / 2); */
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin-left: 30px;
+    margin-right: 315px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      border: 2px solid @color-green;
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      left: calc((700px - 100vw) / 2);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    margin: 0 500px 50px 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    position: relative;
+
+    &::before {
+      content: "";
+      border: 2px solid @color-green;
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      left: calc((1220px - 100vw) / 2);
+    }
   }
 }
 
@@ -26,7 +86,6 @@
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   margin-top: 30px;
 
   @media (min-width: @tablet-width) {
@@ -38,15 +97,17 @@
     margin-top: 30px;
     border-bottom: 1px solid @color-grey;
     grid-template-rows: none;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
     border-top: 0 solid @color-grey;
-    margin: 0 0 15px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid @color-grey;
     align-items: baseline;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -148,86 +209,5 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-  }
-}
-
-.additional-title {
-  max-width: 320px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  position: relative;
-
-  &::after {
-    content: "";
-    border: 2px solid @color-green;
-    transform: rotate(-0.17deg);
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    width: 53px;
-  }
-
-  @media (min-width: @tablet-width) {
-    max-width: 768px;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    position: relative;
-    padding-left: 67px;
-
-    &::after {
-      content: "";
-      border: 2px solid @color-green;
-      transform: rotate(-0.17deg);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 328px;
-    }
-
-    &::before {
-      content: "";
-      border: 2px solid @color-green;
-      transform: rotate(-0.17deg);
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 30px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1440px;
-    margin: 76px 0 0 0;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    position: relative;
-    padding-left: 110px;
-
-    &::after {
-      content: "";
-      border: 2px solid @color-green;
-      transform: rotate(-0.17deg);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 957px;
-    }
-
-    &::before {
-      content: "";
-      border: 2px solid @color-green;
-      transform: rotate(-0.17deg);
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 70px;
-    }
   }
 }
