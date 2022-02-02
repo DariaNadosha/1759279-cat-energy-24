@@ -1,25 +1,25 @@
 .example {
   background: @color-greyer;
-  max-width: 320px;
   border-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
 
   @media (min-width: @tablet-width) {
     background: @color-white;
-    border-top: 1px solid @color-more-grey;
     max-width: 768px;
+    margin-top: 80px;
+    border-top: 1px solid @color-more-grey;
   }
 
   @media (min-width: @desktop-width) {
     background: @color-light-grey;
-    border-top: 1px solid @color-more-grey;
     max-width: 1440px;
+    border-top: 1px solid @color-more-grey;
   }
 }
 
 .example__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-
   @media (min-width: @tablet-width) {
     margin-left: 30px;
     margin-right: 30px;
@@ -38,6 +38,7 @@
 .example__title {
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     margin-left: 30px;
@@ -52,9 +53,13 @@
 }
 
 .example__spending {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +100,7 @@
 
 .example__weight--days {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
 
@@ -115,9 +120,13 @@
 }
 
 .example__total {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-transform: uppercase;
     width: 174px;
     text-align: right;
