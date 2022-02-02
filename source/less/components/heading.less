@@ -9,12 +9,13 @@
   background-position: center;
   top: 0;
   margin-bottom: 190px;
+  background-color: @color-background-cat;
 
   @media (min-width: @tablet-width) {
     text-align: left;
     background: none;
     margin-top: 62px;
-    margin-bottom: 590px;
+    margin-bottom: 560px;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,24 +51,30 @@
       height: 609px;
       position: absolute;
       top: 74%;
-      right: 0;
       z-index: -1;
+      margin-right: 62px;
+      right: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1440px;
-    margin-left: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 190px;
+    padding-right: 190px;
+    box-sizing: border-box;
 
     &::after {
       content: "";
       background: url("../img/main/can-desktop.png") no-repeat;
-      width: 709px;
-      height: 609px;
+      width: 552px;
+      height: 499px;
       position: absolute;
       top: 0;
-      right: 14%;
       z-index: -1;
+      left: 50%;
+      transform: translateX(-29%);
     }
   }
 }

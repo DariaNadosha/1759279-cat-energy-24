@@ -36,19 +36,16 @@
   flex-wrap: wrap;
   margin-bottom: 20px;
   padding: 20px;
-  z-index: -1;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
     padding: 77px 62px 53px 52px;
-    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     background: @color-light-grey;
     margin: 0 0 0 0;
     padding: 0 0 55px 0;
-    z-index: -1;
   }
 }
 
@@ -88,10 +85,11 @@
     padding-right: 0;
     margin-left: 0;
     border-radius: 0;
-    left: 6px;
-    top: -2px;
     margin-right: 77px;
     position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
   }
 
   &::before {
@@ -101,6 +99,7 @@
     border-radius: 100%;
     background-color: @color-green;
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 0;
   }
@@ -118,7 +117,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 40px 192px 39px 214px;
+    padding: 77px 192px 39px 214px;
 
     &::after {
       content: "";
@@ -129,10 +128,10 @@
       display: inline-block;
       vertical-align: middle;
       border-radius: 0;
-      left: 0;
-      top: 0;
-      margin-right: 77px;
+      margin-left: 61px;
       position: absolute;
+      margin-top: 36px;
+      z-index: 2;
     }
 
     &::before {
@@ -143,15 +142,17 @@
       background-color: @color-green;
       position: absolute;
       left: 0;
-      top: 5%;
       display: inline-block;
       vertical-align: middle;
+      margin-left: 52px;
+      margin-top: 41px;
+      z-index: 2;
     }
   }
 }
 
 .options__header--panther {
-  padding-left: 11px;
+  padding-left: 68px;
 
   &::after {
     content: "";
@@ -193,7 +194,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 150px 39px 214px;
+    padding: 77px 150px 39px 214px;
 
     &::after {
       content: "";
@@ -206,7 +207,7 @@
       left: 0;
       top: 0;
       margin-left: 33px;
-      margin-top: 35px;
+      margin-top: 67px;
     }
 
     &::before {
@@ -216,11 +217,10 @@
       border-radius: 100%;
       background-color: @color-green;
       position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
       display: inline-block;
       vertical-align: middle;
+      margin-left: 52px;
+      margin-top: 41px;
     }
   }
 }
@@ -257,7 +257,7 @@
     font-weight: 400;
     text-align: left;
     border: none;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 0 solid #d9d9d9;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -315,8 +315,8 @@
       display: flex;
       border-radius: 0;
       float: right;
-      margin-top: -80px;
-      margin-right: -270px;
+      margin-top: -77px;
+      margin-right: -277px;
     }
 
     &::before {

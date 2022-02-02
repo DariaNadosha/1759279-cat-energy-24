@@ -24,6 +24,8 @@
   font-weight: normal;
   background-color: @color-white;
   padding-right: 15px;
+  padding-left: 16px;
+  margin-left: -12px;
 
   &::before {
     content: "";
@@ -31,19 +33,20 @@
     position: absolute;
     top: 50%;
     width: 100vw;
-    /* left: calc((280px - 100vw) / 2); */
+    left: calc((280px - 100vw) / 2);
     z-index: -1;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 57px;
-    color: @color-black;
+    margin-left: -12px;
+    color: #000000;
     position: relative;
     font-style: normal;
     font-weight: normal;
     margin-right: 480px;
+    padding-left: 63px;
 
     &::before {
       content: "";
