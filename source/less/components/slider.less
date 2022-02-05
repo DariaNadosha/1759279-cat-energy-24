@@ -1,11 +1,151 @@
 .slider {
   display: block;
+  background: @color-greyer;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: 150px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
   }
+}
+
+.slider__wrapper {
+  border-top: 0;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+  }
+}
+
+.slider__images {
+  list-style: none;
+}
+
+.slider__controls {
+  display: grid;
+  gap: 12px;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.slider__range-wrapper {
+  display: none;
+  gap: 22px;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.slider__control {
+  color: @color-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: solid 1px @color-grey;
+  }
+}
+
+.slider__control--right {
+  text-align: right;
+}
+
+.custom__range {
+  background-color: @color-green;
+  border-radius: 50%;
+  width: 100%;
+  cursor: pointer;
+  border: solid 1px @color-grey;
+}
+
+.switcher {
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: space-between;
+}
+
+.switcher__wrapper {
+  background-color: @color-white;
+  display: inline-flex;
+  border-radius: 6px;
+  min-width: 50%;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-white;
+    display: inline-flex;
+    border-radius: 6px;
+    min-width: 50%;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.switcher__radio {
+  display: inline-block;
+  margin-right: -2px;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.switcher__thumb {
+  height: 43%;
+  width: calc(50% - 6px);
+  display: block;
+  background-color: @color-green;
+  border-radius: 6px;
+  transition: transform 0.1s ease-out;
+  z-index: 2;
+  position: absolute;
+  left: 6px;
+  top: 28%;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+    height: 43%;
+    width: calc(50% - 6px);
+    display: block;
+    background-color: @color-green;
+    border-radius: 6px;
+    transition: transform 0.1s ease-out;
+    z-index: 2;
+    position: absolute;
+    left: 6px;
+    top: 28%;
+    pointer-events: none;
+  }
+}
+
+.slider__cat-slim {
+  display: none;
 }

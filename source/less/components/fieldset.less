@@ -126,11 +126,11 @@
   overflow: hidden;
 }
 
-.fieldset__list__item {
+.fieldset__item {
   margin-bottom: 30px;
 }
 
-.fieldset__list__item label {
+.fieldset__item label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -152,21 +152,9 @@
     font-weight: 400;
     line-height: 18px;
   }
-
-  .fieldset__list__item label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
-    padding-left: 35px;
-    padding-bottom: 15px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-  }
 }
 
-.fieldset__list__item--input:checked + label {
+.fieldset__input:checked + label {
   &::after {
     content: "";
     background: url("../img/fieldset/fieldset-tick.svg") no-repeat, url("../img/fieldset/fieldset.svg") no-repeat;
@@ -179,7 +167,7 @@
   }
 }
 
-.fieldset__list__item--input:not(:checked) + label {
+.fieldset__input:not(:checked) + label {
   &::before {
     content: "";
     background: url("../img/fieldset/fieldset.svg") no-repeat;
@@ -192,7 +180,7 @@
   }
 }
 
-.fieldset__list__item--input--active:checked + label {
+.fieldset__input--active:checked + label {
   &::after {
     content: "";
     background: url("../img/fieldset/fieldset-tick.svg") no-repeat, url("../img/fieldset/fieldset.svg") no-repeat;
@@ -205,7 +193,7 @@
   }
 }
 
-.fieldset__list__item--input--active:not(:checked) + label {
+.fieldset__input--active:not(:checked) + label {
   &::before {
     content: "";
     background: url("../img/fieldset/fieldset.svg") no-repeat;
