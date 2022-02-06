@@ -22,8 +22,8 @@
         </a>
         <nav class="nav nav--nojs">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav__wrapper">
-            <a class="nav__item nav__item--active nav__item--active-desktop" href="index.html">Главная</a>
+          <div class="nav__wrapper nav__wrapper-desktop">
+            <a class="nav__item nav__item--active nav__item-desktop" href="index.html">Главная</a>
             <a class="nav__item" href="catalog.html">Каталог продукции</a>
             <a class="nav__item" href="form.html">Подбор программы</a>
           </div>
@@ -67,65 +67,67 @@
           </ul>
         </div>
       </div>
-      <div  class="live-example">
-      <div class="example">
-        <div class="example__wrapper">
-        <h2 class="example__title title">Живой пример</h2>
-        <div class="example__expenses">
-          <p class="example__expenses-text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <section  class="example__expenses-days">
-            <div class="example__weight">
-              <p class="example__weight-title">5 кг</p>
-              <p class="example__weight-text">снижение веса</p>
+      <div class="live-example">
+        <div class="live-example__wrapper">
+          <div class="example">
+            <div class="example__wrapper">
+            <h2 class="example__title title">Живой пример</h2>
+            <div class="example__expenses">
+              <p class="example__expenses-text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок!
+                При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <section  class="example__expenses-days">
+                <div class="example__weight">
+                  <p class="example__weight-title">5 кг</p>
+                  <p class="example__weight-text">снижение веса</p>
+                </div>
+                <div class="example__days">
+                  <p class="example__days-title">60 дней</p>
+                  <p class="example__days-text">затрачено времени</p>
+                </div>
+              </section>
+              <p class="example__total">Затраты на питание: 15 000 руб.</p>
+              </div>
             </div>
-            <div class="example__days">
-              <p class="example__days-title">60 дней</p>
-              <p class="example__days-text">затрачено времени</p>
-            </div>
-          </section>
-          <p class="example__total">Затраты на питание: 15 000 руб.</p>
+          </div>
+          <div class="slider">
+            <section class="slider__wrapper">
+              <ul class="slider__images">
+                <li class="slider__cat-fat">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet.png 1x, img/slider/fat-cat-tablet-2x.png 2x">
+                    <img src="img/slider/fat-cat.png" srcset="img/slider/fat-cat.png 1x, img/slider/fat-cat-2x.png 2x" alt="Толстый кот" width="243" height="232">
+                  </picture>
+                </li>
+                <li class="slider__cat-slim">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet.png 1x, img/slider/slim-cat-tablet-2x.png 2x">
+                    <img src="img/slider/slim-cat.png" srcset="img/slider/slim-cat.png 1x, img/slider/slim-cat-2x.png 2x" alt="Худой кот" width="243" height="232">
+                  </picture>
+                </li>
+              </ul>
+              <form class="slider__controls">
+                <fieldset class="slider__range-wrapper">
+                  <legend class="visually-hidden">Слайдер</legend>
+                  <a class="slider__control" href="#before">Было</a>
+                  <input class="slider__range custom-range" type="range" min="0" max="100" value="50" hidden="hidden"/>
+                  <a class="slider__control slider__control--right" href="#after">Стало</a>
+                </fieldset>
+                <fieldset class="switcher slider__switcher" role="radiogroup" hidden="hidden">
+                  <legend class="visually-hidden">Переключатель</legend>
+                  <label class="slider__control" for="before-radio">Было</label>
+                  <div class="switcher__wrapper">
+                    <input class="switcher__radio" id="before-radio" type="radio" name="slider-switcher" checked="checked">
+                    <input class="switcher__radio switcher__radio--on" id="after-radio" type="radio" name="slider-switcher">
+                    <span class="switcher__thumb" aria-hidden="true"></span>
+                  </div>
+                  <label class="slider__control" for="after-radio">Стало</label>
+                </fieldset>
+              </form>
+            </section>
           </div>
         </div>
       </div>
-        <div class="slider">
-          <section class="slider__wrapper">
-            <ul class="slider__images">
-              <li class="slider__cat-fat">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet.png 1x, img/slider/fat-cat-tablet-2x.png 2x">
-                  <img src="img/slider/fat-cat.png" srcset="img/slider/fat-cat.png 1x, img/slider/fat-cat-2x.png 2x" alt="Толстый кот" width="243" height="232">
-                </picture>
-              </li>
-              <li class="slider__cat-slim">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet.png 1x, img/slider/slim-cat-tablet-2x.png 2x">
-                  <img src="img/slider/slim-cat.png" srcset="img/slider/slim-cat.png 1x, img/slider/slim-cat-2x.png 2x" alt="Худой кот" width="243" height="232">
-                </picture>
-              </li>
-            </ul>
-            <form class="slider__controls">
-              <fieldset class="slider__range-wrapper">
-                <legend class="visually-hidden">Слайдер</legend>
-                <a class="slider__control" href="#before">Было</a>
-                <input class="slider__range custom-range" type="range" min="0" max="100" value="50" hidden="hidden"/>
-                <a class="slider__control slider__control--right" href="#after">Стало</a>
-              </fieldset>
-              <fieldset class="switcher slider__switcher" role="radiogroup" hidden="hidden">
-                <legend class="visually-hidden">Переключатель</legend>
-                <label class="slider__control" for="before-radio">Было</label>
-                <div class="switcher__wrapper">
-                  <input class="switcher__radio" id="before-radio" type="radio" name="slider-switcher" checked="checked">
-                  <input class="switcher__radio switcher__radio--on" id="after-radio" type="radio" name="slider-switcher">
-                  <span class="switcher__thumb" aria-hidden="true"></span>
-                </div>
-                <label class="slider__control" for="after-radio">Стало</label>
-              </fieldset>
-            </form>
-          </section>
-          </div>
-        </div>
         <div class="address">
           <div class="address__wrapper address__wrapper--main">
             <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
