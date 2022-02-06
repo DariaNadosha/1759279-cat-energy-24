@@ -3,14 +3,6 @@ import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-import csso from 'postcss-csso';
-import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -20,26 +12,9 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+      autoprefixer()
     ]))
-    .pipe(rename('style.mini.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
-
-// HTML
-
-const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(gulp.dest('build'));
-}
-
-// Scripts
-
-const scripts = () => {
-  return gulp.src('source/js/script.js')
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -48,7 +23,7 @@ const scripts = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -61,7 +36,6 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
@@ -69,5 +43,3 @@ const watcher = () => {
 export default gulp.series(
   styles, server, watcher
 );
-
-// Scripts
