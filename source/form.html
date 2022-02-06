@@ -21,8 +21,8 @@
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="nav__wrapper">
             <a class="nav__item" href="index.html">Главная</a>
-            <a class="nav__catalog" href="catalog.html">Каталог продукции</a>
-            <a class="nav__program  nav__program--active" href="form.html">Подбор программы</a>
+            <a class="nav__item" href="catalog.html">Каталог продукции</a>
+            <a class="nav__item  nav__item--active" href="form.html">Подбор программы</a>
           </div>
         </nav>
       </section>
@@ -64,7 +64,7 @@
           </ul>
         </fieldset>
         <div class="contacts">
-            <h2 class="contacts__heading">Контактные данные (владельца кота)</h2>
+            <h2 class="contacts__heading"><span class="contacts__heading-decoration">Контактные данные (владельца кота)</span></h2>
             <div class="contacts__wrapper">
             <p class="contacts__fields">
               <label class="contacts__label" for="appointment-email">E-mail:*</label>
@@ -78,7 +78,7 @@
         </div>
         <div class="comment">
           <div class="comment__wrapper">
-            <h2 class="comment__heading">Комментарий</h2>
+            <h2 class="comment__heading"><span class="comment__heading-decoration">Комментарий</span></h2>
             <p class="comment__item">
               <label class="comment__label" for="appointment-text"></label>
               <textarea class="comment__textarea" name="comment" id="appointment-text" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -86,7 +86,7 @@
           </div>
         </div>
         <fieldset class="fieldset">
-          <legend class="fieldset__heading">Дополнительно</legend>
+          <legend class="fieldset__heading"><span class="fieldset__heading-decoration">Дополнительно</span></legend>
           <ul class="fieldset__list">
             <li class="fieldset__item">
               <input class="visually-hidden fieldset__input fieldset__input--active" type="checkbox" name="sweetener" id="sweetener" checked="" value="Сахарозаменитель">

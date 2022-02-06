@@ -17,16 +17,15 @@
     <header class="header">
       <section class="header__wrapper header__wrapper--main">
         <a class="logo" href="index.html">Логотип Cat Energy
-          <!-- <img class="header__logo-img" src="img/logo/logo-mobile.svg" alt="Логотип Кэт энерджи" width="33" height="38"> -->
         </a>
         <a class="logo-text" href="index.html"> Логотип Cat Energy - текст
         </a>
-        <nav class="nav nav--closed">
+        <nav class="nav nav--nojs">
           <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="nav__wrapper">
-            <a class="nav__item nav__item--active" href="index.html">Главная</a>
-            <a class="nav__catalog" href="catalog.html">Каталог продукции</a>
-            <a class="nav__program" href="form.html">Подбор программы</a>
+            <a class="nav__item nav__item--active nav__item--active-desktop" href="index.html">Главная</a>
+            <a class="nav__item" href="catalog.html">Каталог продукции</a>
+            <a class="nav__item" href="form.html">Подбор программы</a>
           </div>
         </nav>
       </section>
@@ -68,6 +67,7 @@
           </ul>
         </div>
       </div>
+      <div  class="live-example">
       <div class="example">
         <div class="example__wrapper">
         <h2 class="example__title title">Живой пример</h2>
@@ -89,38 +89,42 @@
           </div>
         </div>
       </div>
-      <div class="slider">
-        <section class="slider__wrapper">
-          <ul class="slider__images">
-            <li class="slider__cat-fat">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet.png">
-                <img src="img/slider/fat-cat.png" alt="Толстый кот" width="243" height="232">
-              </picture>
-            </li>
-            <li class="slider__cat-slim">
-              <img src="img/slider/slim-cat.png" alt="Худой кот" width="243" height="232">
-            </li>
-          </ul>
-          <form class="slider__controls">
-            <fieldset class="slider__range-wrapper">
-              <legend class="visually-hidden">Слайдер</legend>
-              <a class="slider__control" href="#before">Было</a>
-              <input class="slider__range custom-range" type="range" min="0" max="100" value="50" hidden="hidden"/>
-              <a class="slider__control slider__control--right" href="#after">Стало</a>
-            </fieldset>
-            <fieldset class="switcher slider__switcher" role="radiogroup" hidden="hidden">
-              <legend class="visually-hidden">Переключатель</legend>
-              <label class="slider__control" for="before-radio">Было</label>
-              <div class="switcher__wrapper">
-                <input class="switcher__radio" id="before-radio" type="radio" name="slider-switcher" checked="checked">
-                <input class="switcher__radio switcher__radio--on" id="after-radio" type="radio" name="slider-switcher">
-                <span class="switcher__thumb" aria-hidden="true"></span>
-              </div>
-              <label class="slider__control" for="after-radio">Стало</label>
-            </fieldset>
-          </form>
-        </section>
+        <div class="slider">
+          <section class="slider__wrapper">
+            <ul class="slider__images">
+              <li class="slider__cat-fat">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet.png 1x, img/slider/fat-cat-tablet-2x.png 2x">
+                  <img src="img/slider/fat-cat.png" srcset="img/slider/fat-cat.png 1x, img/slider/fat-cat-2x.png 2x" alt="Толстый кот" width="243" height="232">
+                </picture>
+              </li>
+              <li class="slider__cat-slim">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet.png 1x, img/slider/slim-cat-tablet-2x.png 2x">
+                  <img src="img/slider/slim-cat.png" srcset="img/slider/slim-cat.png 1x, img/slider/slim-cat-2x.png 2x" alt="Худой кот" width="243" height="232">
+                </picture>
+              </li>
+            </ul>
+            <form class="slider__controls">
+              <fieldset class="slider__range-wrapper">
+                <legend class="visually-hidden">Слайдер</legend>
+                <a class="slider__control" href="#before">Было</a>
+                <input class="slider__range custom-range" type="range" min="0" max="100" value="50" hidden="hidden"/>
+                <a class="slider__control slider__control--right" href="#after">Стало</a>
+              </fieldset>
+              <fieldset class="switcher slider__switcher" role="radiogroup" hidden="hidden">
+                <legend class="visually-hidden">Переключатель</legend>
+                <label class="slider__control" for="before-radio">Было</label>
+                <div class="switcher__wrapper">
+                  <input class="switcher__radio" id="before-radio" type="radio" name="slider-switcher" checked="checked">
+                  <input class="switcher__radio switcher__radio--on" id="after-radio" type="radio" name="slider-switcher">
+                  <span class="switcher__thumb" aria-hidden="true"></span>
+                </div>
+                <label class="slider__control" for="after-radio">Стало</label>
+              </fieldset>
+            </form>
+          </section>
+          </div>
         </div>
         <div class="address">
           <div class="address__wrapper address__wrapper--main">

@@ -35,7 +35,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 0;
     margin-right: 110px;
     align-items: center;
     flex-wrap: wrap;
@@ -61,6 +61,15 @@
       top: 0;
       right: 0;
       z-index: -1;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+  .header__wrapper--main {
+    &::after {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/desktop-cat-with-tongue-2x.png") no-repeat;
+      background-size: 720px 694px;
     }
   }
 }

@@ -8,14 +8,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 111px;
+    margin-top: -65px;
     background: none;
-    margin-bottom: 260px;
+    margin-bottom: 80px;
+    grid-row: 2/7;
+    grid-column: 2/3;
   }
 }
 
 .surprise__wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/surprise/surprise.jpg") no-repeat 50% 50%;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/surprise/surprise.png") no-repeat 50% 50%;
   font-family: "Oswald", "Arial", sans-serif;
   position: relative;
   background-position: center;
@@ -54,7 +56,7 @@
       height: 290px;
       margin-top: 69px;
       margin-bottom: 0;
-      max-width: 245px;
+      width: 245px;
 
       &::after {
         background: url("../img/surprise/surprise-tablet.svg") no-repeat 50% 50%;
@@ -84,5 +86,26 @@
   @media (min-width: @desktop-width) {
     padding: 185px 43px 42px 41px;
     text-align: center;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .surprise__wrapper {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/surprise/surprise-2x.png") no-repeat 50% 50%;
+    background-size: 280px 290px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+  .surprise__wrapper {
+    @media (min-width: @tablet-width) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/surprise/surprise-tablet-2x.png") no-repeat 50% 50%;
+      background-size: 707px 200px;
+
+      @media (min-width: @desktop-width) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/surprise/surprise-desktop-2x.png") no-repeat 50% 50%;
+        background-size: 245px 290px;
+      }
+    }
   }
 }
