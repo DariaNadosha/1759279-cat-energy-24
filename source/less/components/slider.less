@@ -11,6 +11,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    background: transparent;
   }
 }
 
@@ -40,6 +41,10 @@
     display: flex;
     margin-top: -260px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -225px;
+  }
 }
 
 .slider__cat-slim img {
@@ -68,6 +73,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
   }
 }
 
@@ -127,13 +136,29 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    background-color: @color-white;
+    background-color: @color-light-dark-grey;
     display: inline-flex;
     border-radius: 6px;
-    min-width: 50%;
-    height: 14px;
+    width: 426px;
+    height: 6px;
     cursor: pointer;
     position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: -15px;
+      background-color: @color-green;
+      cursor: pointer;
+      border: 13px solid #ffffff;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    }
   }
 }
 
@@ -162,16 +187,6 @@
   pointer-events: none;
 
   @media (min-width: @tablet-width) {
-    height: 43%;
-    width: calc(50% - 6px);
-    display: block;
-    background-color: @color-green;
-    border-radius: 6px;
-    transition: transform 0.1s ease-out;
-    z-index: 2;
-    position: absolute;
-    left: 6px;
-    top: 28%;
-    pointer-events: none;
+    display: none;
   }
 }
