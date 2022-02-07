@@ -11,7 +11,11 @@
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     margin-top: 24px;
+  }
+}
 
+.header-main-desktop {
+  @media (min-width: @desktop-width) {
     &::after {
       content: "";
       margin: 0;
@@ -39,6 +43,15 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-right: 110px;
   }
 }
 
@@ -70,14 +83,15 @@
     margin-right: 110px;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 53px;
+    margin-top: 20px;
     position: static;
+    margin-bottom: 20px;
   }
 }
 
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .header__wrapper--main {
+  .header-main-desktop {
     &::after {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/desktop-cat-with-tongue-2x.png");
       background-size: 720px 694px;
