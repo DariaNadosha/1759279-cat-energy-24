@@ -1,5 +1,7 @@
 .header {
   max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
@@ -9,6 +11,34 @@
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     margin-top: 24px;
+
+    &::after {
+      content: "";
+      margin: 0;
+      font-weight: 400;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: @color-black;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/desktop-cat-with-tongue.png") no-repeat;
+      background-color: #434343;
+      margin-right: 0;
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.header__container {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 }
 
@@ -19,6 +49,10 @@
   margin-right: 20px;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  width: 192px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -37,26 +71,16 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 53px;
+    position: static;
   }
 }
 
-.header__wrapper--main {
-  @media (min-width: @desktop-width) {
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header__wrapper--main {
     &::after {
-      content: "";
-      margin: 0;
-      font-weight: 400;
-      font-family: "Oswald", "Arial", sans-serif;
-      color: @color-black;
-      background: url("../img/main/desktop-cat-with-tongue.png") no-repeat;
-      margin-right: 0;
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      top: 0;
-      right: 0;
-      z-index: -1;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/desktop-cat-with-tongue-2x.png");
+      background-size: 720px 694px;
     }
   }
 }
-

@@ -1,76 +1,80 @@
 .catalog-more {
-  max-width: 320px;
-  text-align: center;
-  display: block;
   border-top: 1px solid @color-grey;
-  border-bottom: 1px solid @color-grey;
-  padding: 20px 0;
-  margin-left: 0;
-  margin-right: 20px;
-  margin-top: 30px;
-
-  @media (min-width: @tablet-width) {
-    max-width: 320px;
-    text-align: center;
-    display: block;
-    border-top: 1px solid @color-grey;
-    border-bottom: 1px solid @color-grey;
-    padding: 30px 0;
-    margin-left: 30px;
-    margin-right: 0;
-    margin-top: 30px;
-  }
-}
-
-.catalog-more__wrapper {
   margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid @color-grey;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    background-color: transparent;
+    border-top: 0 solid @color-grey;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+    text-align: center;
     position: relative;
+    border: 2px solid @color-light-grey;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    width: 245px;
   }
 }
 
-.catalog-more--button {
+.catalog-more__button {
   background: url("../img/more-goods/button-more-goods.svg") no-repeat;
   width: 30px;
   height: 30px;
   cursor: pointer;
   font-size: 0;
   border: none;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
-    background: url("../img/more-goods/button-more-goods.svg") no-repeat;
-    width: 30px;
-    height: 30px;
+    background: url("../img/more-goods/button-more-goods-tablet.svg") no-repeat;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     font-size: 0;
     border: none;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
-.catalog-more--header {
+.catalog-more__header {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: @color-extra-grey;
-  margin-top: 30px;
+  margin-top: 23px;
+  color: @color-almost-black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    color: @color-extra-grey;
-    margin-top: 50px;
-    margin-left: 90px;
-    margin-right: 90px;
+    width: 150px;
+    margin-top: 49px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.catalog-more--options {
+.catalog-more__options {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -85,17 +89,24 @@
     font-weight: 400;
     color: @color-dark-grey;
     margin-bottom: 30px;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 
-.catalog-more--button-all {
+.catalog-more__button-all {
   background: @color-light-grey;
   color: @color-dark-grey;
   width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 25px;
 
   &:hover {
     background-color: @color-darker-light-grey;
@@ -109,9 +120,9 @@
   @media (min-width: @tablet-width) {
     background: @color-light-grey;
     color: @color-dark-grey;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 10px 39px;
+    margin-top: 68px;
+    width: 77%;
 
     &:hover {
       background-color: @color-darker-light-grey;
@@ -121,5 +132,11 @@
       background-color: @color-darker-light-grey;
       color: rgba(68, 68, 68, 0.3);
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 9px 39px;
+    margin-bottom: 30px;
+    width: 77%;
   }
 }

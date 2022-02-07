@@ -1,5 +1,7 @@
 .advantages {
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 320px;
 
   @media (min-width: @tablet-width) {
@@ -28,6 +30,9 @@
 }
 
 .advantages__list {
+  margin-left: -40px;
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,9 +45,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     margin-top: 105px;
-    padding-left: 0;
-    margin-right: 15px;
     margin-bottom: 70px;
+    padding-left: 1;
   }
 }
 
@@ -55,7 +59,6 @@
   padding: 20px 0;
   padding-left: 80px;
   position: relative;
-  width: 200px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -69,9 +72,8 @@
     position: relative;
     margin-top: 50px;
     padding-right: 0;
-    margin-right: 21px;
+    margin-right: 46px;
     margin-left: 0;
-    width: 230px;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,20 +90,18 @@
     padding-right: 0;
     margin-right: 0;
     margin-left: 0;
-    width: 230px;
   }
 }
 
 .advantages__item--leaf {
   &::before {
     content: "";
-    background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat;
+    background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat 50% 50%;
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: middle;
     padding-right: 0;
-    border-radius: 0;
     position: absolute;
     margin-left: -80px;
   }
@@ -109,13 +109,12 @@
   @media (min-width: @tablet-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -128,7 +127,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -138,13 +136,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-leaf.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -157,7 +154,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -168,13 +164,12 @@
 .advantages__item--tub {
   &::before {
     content: "";
-    background: @color-green url("../img/advantages/icon-tub.svg") no-repeat;
+    background: @color-green url("../img/advantages/icon-tub.svg") no-repeat 50% 50%;
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: middle;
     padding-right: 0;
-    border-radius: 0;
     position: absolute;
     margin-left: -80px;
   }
@@ -182,13 +177,12 @@
   @media (min-width: @tablet-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-tub.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-tub.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -201,7 +195,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -211,13 +204,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-tub.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-tub.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -230,7 +222,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -241,13 +232,12 @@
 .advantages__item--fork {
   &::before {
     content: "";
-    background: @color-green url("../img/advantages/icon-fork.svg") no-repeat;
+    background: @color-green url("../img/advantages/icon-fork.svg") no-repeat 50% 50%;
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: middle;
     padding-right: 0;
-    border-radius: 0;
     position: absolute;
     margin-left: -80px;
   }
@@ -255,13 +245,12 @@
   @media (min-width: @tablet-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-fork.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-fork.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -274,7 +263,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -284,13 +272,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-fork.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-fork.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -303,7 +290,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -314,13 +300,12 @@
 .advantages__item--alarm {
   &::before {
     content: "";
-    background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat;
+    background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat 50% 50%;
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: middle;
     padding-right: 0;
-    border-radius: 0;
     position: absolute;
     margin-left: -80px;
   }
@@ -328,13 +313,12 @@
   @media (min-width: @tablet-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -347,7 +331,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
@@ -357,13 +340,12 @@
   @media (min-width: @desktop-width) {
     &::before {
       content: "";
-      background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat;
+      background: @color-green url("../img/advantages/icon-alarm.svg") no-repeat 50% 50%;
       width: 60px;
       height: 60px;
       display: block;
       padding-right: 0;
       margin-left: 0;
-      border-radius: 0;
       position: absolute;
       margin-top: -85px;
     }
@@ -376,7 +358,6 @@
       display: block;
       padding-right: 0;
       margin-left: 110px;
-      border-radius: 0;
       position: absolute;
       margin-top: -22px;
       z-index: -1;
