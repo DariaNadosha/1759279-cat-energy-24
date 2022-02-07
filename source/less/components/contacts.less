@@ -27,9 +27,7 @@
   color: @color-black;
   position: relative;
   font-weight: normal;
-  background-color: @color-white;
-  margin-right: 100px;
-  padding-right: 10px;
+  padding-right: 0;
   padding-left: 16px;
   margin-left: -20px;
 
@@ -39,18 +37,20 @@
     position: absolute;
     top: 50%;
     width: 100vw;
-    left: calc((280px - 100vw) / 2);
+    left: calc((320px - 100vw) / 2);
     z-index: -1;
   }
 
   @media (min-width: @tablet-width) {
+    max-width: 768px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 36px;
     line-height: 36px;
-    color: @color-black;
+    font-weight: 400;
     position: relative;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 150px;
+    padding-left: 30px;
+    margin-bottom: 80px;
 
     &::before {
       content: "";
@@ -58,7 +58,7 @@
       position: absolute;
       top: 50%;
       width: 100vw;
-      left: calc((638px - 100vw) / 2);
+      left: calc((620px - 100vw) / 2);
       z-index: -1;
     }
   }
@@ -72,7 +72,6 @@
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 76px;
-    margin-right: 750px;
 
     &::before {
       content: "";
@@ -80,9 +79,30 @@
       position: absolute;
       top: 50%;
       width: 100vw;
-      left: calc((1220px - 100vw) / 2);
+      left: calc((1440px - 100vw) / 2);
       z-index: -1;
     }
+  }
+}
+
+.contacts__heading-decoration {
+  background: @color-white;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  display: inline-table;
+  margin-right: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -70px;
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -70px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -107,7 +127,7 @@
   }
 }
 
-.contacts__fields--label {
+.contacts__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -129,7 +149,7 @@
   }
 }
 
-.contacts__fields--input {
+.contacts__input {
   padding-top: 5px;
   padding-bottom: 13px;
   list-style: none;
